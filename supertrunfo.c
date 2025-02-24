@@ -31,5 +31,12 @@ int main()
     printf("Digite o valor do pib: \n");
     scanf("%f", &pib);
 
+    printf("A carta 1 tem as seguintes informações: ");
+    printf("Nome do estado: %s - Código da carta: %s \n", nome_estado, codigo_carta);
+
+    printf("População: %d - Numero de pontos turístios: %d \n", populacao, numero_pontos_turisticos);
+    printf("Área em km: %f - Pib: %f \n", area_km, pib);
+
+
     
 }
