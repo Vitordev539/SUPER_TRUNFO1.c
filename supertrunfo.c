@@ -7,6 +7,9 @@ int main()
     char nome_estado[50];
     int populacao, codigo_carta, numero_pontos_turisticos;
     float area_km, pib;
+    float densidade_populacional = (float)populacao / area_km;
+    float pib_per_capita = pib / populacao, resultado;
+    
     // Solicitando ao usuário os dados da carta 1
     printf("Digite o nome do estado: \n");
     scanf("%s", nome_estado);
@@ -25,6 +28,10 @@ int main()
 
     printf("Digite o valor do pib: \n");
     scanf("%f", &pib);
+
+    printf("A densidade populacional é : %.2f/n", densidade_populacional);
+    
+    printf("O pib per capita é : %.2f/n", pib_per_capita);
 
     char carta2;
     char nome_estado2[50];
