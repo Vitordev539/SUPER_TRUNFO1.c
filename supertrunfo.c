@@ -7,8 +7,8 @@ int main()
     char nome_estado[50];
     int populacao, codigo_carta, numero_pontos_turisticos;
     float area_km, pib;
-    float densidade_populacional = (float)populacao / area_km;
-    float pib_per_capita = pib / populacao, resultado;
+    float densidade_populacional;
+    float pib_per_capita ;
     
     // Solicitando ao usuário os dados da carta 1
     printf("Digite o nome do estado: \n");
@@ -29,9 +29,11 @@ int main()
     printf("Digite o valor do pib: \n");
     scanf("%f", &pib);
 
-    printf("A densidade populacional é : %.2f/n", densidade_populacional);
+    densidade_populacional = (float)populacao / area_km;
+    printf("A densidade populacional é : %.2f\n", densidade_populacional);
     
-    printf("O pib per capita é : %.2f/n", pib_per_capita);
+    pib_per_capita =  (float) pib / populacao;
+    printf("O pib per capita é : %.2f\n", pib_per_capita);
 
     char carta2;
     char nome_estado2[50];
@@ -60,13 +62,14 @@ int main()
     printf("Nome do estado: %s\nCódigo da carta: %d \n", nome_estado, codigo_carta);
 
     printf("População: %d\nNumero de pontos turístios: %d \n", populacao, numero_pontos_turisticos);
-    printf("Área em km: %f\nPib: %f \n", area_km, pib);
+    printf("Área em km: %f\nPib: %f Bilhões de reais\n", area_km, pib);
+    printf("densidade populacional: %.2f\npib per capita: %.2f reais\n", densidade_populacional, pib_per_capita);
     // Exibindo em tela os dados solitados anteriormente da carta 2
     printf("A carta 2 tem as seguintes informações:\n");
-    printf("Nome do estado: %s\nCódigo da carta: %d \n", nome_estado2, codigo_carta2);
+    printf("Nome do estado: %s\nCódigo da carta: %d\n", nome_estado2, codigo_carta2);
 
-    printf("População: %d\nNumero de pontos turístios: %d \n", populacao2, numero_pontos_turisticos2);
-    printf("Área em km: %f\nPib: %f \n", area_km2, pib2);
+    printf("População: %d\nNumero de pontos turístios: %d\n", populacao2, numero_pontos_turisticos2);
+    printf("Área em km: %f Bilhões de reais\nPib: %f\n", area_km2, pib2);
 
     return 0;
 }
