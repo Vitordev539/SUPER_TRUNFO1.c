@@ -92,5 +92,5 @@ int main()
 
     printf("densidade populacional: %.2f\npib per capita: %.2f reais\n", densidade_populacional2, pib_per_capita2);
 
-    return 0;
+    return 0; 
 }
