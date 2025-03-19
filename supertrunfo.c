@@ -9,6 +9,7 @@ int main()
     float area_km, pib;
     float densidade_populacional;
     float pib_per_capita;
+    float super_poder;
 
     // Solicitando ao usuário os dados da carta 1
     printf("Digite o nome do estado: \n");
@@ -35,17 +36,21 @@ int main()
     pib_per_capita = (float)pib / populacao;
     printf("O pib per capita é : %.2f\n", pib_per_capita);
 
+    super_poder = (populacao + area_km + pib + numero_pontos_turisticos + pib_per_capita), densidade_populacional = area_km / populacao;
+    printf("O super poder da carta 1 é : %.2f\n", super_poder );
+
     char carta2;
     char nome_estado2[50];
     int populacao2, codigo_carta2, numero_pontos_turisticos2;
     float area_km2, pib2;
     float pib_per_capita2;
     float densidade_populacional2;
+    float super_poder2; 
 
     // Solicitando ao usuário os dados da carta 2
 
     printf("Digite o nome do estado: \n");
-    scanf("%s", nome_estado2);
+    scanf("%s", nome_estado2); 
 
     printf("Digite o codigo da carta: \n");
     scanf("%d", &codigo_carta2);
@@ -66,7 +71,10 @@ int main()
     printf("A densidade populacional é : %.2f\n", densidade_populacional2);
 
     pib_per_capita2 = (float)pib2 / populacao2;
-    printf("O pib per capita é : %.2f\n", pib_per_capita2);
+    printf("O pib per capita é : %.2f\n", pib_per_capita2); 
+
+    super_poder2 = (populacao2 + area_km2 + pib2 + numero_pontos_turisticos2 + pib_per_capita2), densidade_populacional2 = area_km2 / populacao2;
+    printf("O super poder da carta 1 é : %.2f\n", super_poder2 );
 
     // Exibindo em tela os dados solitados anteriormente da carta 1
 
@@ -79,6 +87,8 @@ int main()
     printf("Área em km: %f\nPib: %f Bilhões de reais\n", area_km, pib);
 
     printf("densidade populacional: %.2f\npib per capita: %.2f reais\n", densidade_populacional, pib_per_capita);
+
+    printf("SUper poder: %.2f\n", super_poder);
 
     // Exibindo em tela os dados solitados anteriormente da carta 2
 
