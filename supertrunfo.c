@@ -10,6 +10,7 @@ int main()
     float densidade_populacional;
     float pib_per_capita;
     float super_poder;
+    int resultado;
 
     // Solicitando ao usuário os dados da carta 1
     printf("Digite o nome do estado: \n");
@@ -101,6 +102,12 @@ int main()
     printf("Área em km: %f Bilhões de reais\nPib: %f\n", area_km2, pib2);
 
     printf("densidade populacional: %.2f\npib per capita: %.2f reais\n", densidade_populacional2, pib_per_capita2);
+
+    printf("SUper poder: %.2f\n", super_poder2);
+
+    //comparando as cartas 
+
+    resultado = populacao2 > populacao2, numero_pontos_turisticos > numero_pontos_turisticos2, area_km > area_km2, pib > pib2, pib_per_capita > pib_per_capita2, densidade_populacional < densidade_populacional2, super_poder > super_poder2;
 
     return 0; 
 }
