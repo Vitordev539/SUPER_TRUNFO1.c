@@ -107,7 +107,18 @@ int main()
 
     //comparando as cartas 
 
-    resultado = populacao2 > populacao2, numero_pontos_turisticos > numero_pontos_turisticos2, area_km > area_km2, pib > pib2, pib_per_capita > pib_per_capita2, densidade_populacional < densidade_populacional2, super_poder > super_poder2;
 
+    printf(" Comparando os valores das cartas 1 e 2\n");
+
+    printf("População 1 > população 2: %d\n", populacao > populacao2);
+    printf("pontos turisticos > pontos turisticos 2 : %d\n", numero_pontos_turisticos > numero_pontos_turisticos2);
+    printf("Area km 1 > area km 2 : %d\n", area_km > area_km2);
+    printf("Pib > pib 2 : %d\n", pib > pib2);
+    printf("Pib per capita > pib per capita 2 : %d\n", pib_per_capita > pib_per_capita2);
+    printf("Densidade > densidade 2 : %d\n", densidade_populacional < densidade_populacional2);
+    printf("Super poder > super poder 2 : %d\n", super_poder > super_poder2);
+
+
+  
     return 0; 
 }
