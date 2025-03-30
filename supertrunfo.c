@@ -118,7 +118,42 @@ int main()
     printf("Densidade > densidade 2 : %d\n", densidade_populacional < densidade_populacional2);
     printf("Super poder > super poder 2 : %d\n", super_poder > super_poder2);
 
+    if (populacao > populacao2){
+        printf("carta 1 venceu!");
+    }else {
+            printf("Carta 2 venceu!");
+        }
+        if(numero_pontos_turisticos > numero_pontos_turisticos2){
+            printf("Carta 1 venceu!");
+        }else{
+            printf("Carta 2 venceu!");
+        }
+        if(area_km > area_km2){
+            printf("Carta 1 venceu!");
+        }else{
+            printf("Carta 2 venceu");
+        }
+        if(pib > pib2){
+            printf("Carta 1 venceu!");
+        }else{
+            printf("Carta 2 venceu");
+        }
+        if(pib_per_capita > pib_per_capita2){
+            printf("Carta 1 venceu!");
+        }else{
+            printf("Carta 2 venceu");
+        }
+        if(densidade_populacional < densidade_populacional2){
+            printf("Carta 1 venceu!");
+        }else{
+            printf("Carta 2 venceu");
+        }
+        if(super_poder > super_poder2){
+            printf("Carta 1 venceu!");
+        }else{
+            printf("Carta 2 venceu");
+        }
+       
 
-  
     return 0; 
 }
