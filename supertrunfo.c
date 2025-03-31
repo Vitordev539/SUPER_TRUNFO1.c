@@ -107,78 +107,89 @@ int main()
 
     // comparando as cartas
 
-    printf("Comparando valores das cartas\n");
-
+    printf("Comparação de cartas (atributo: População):\n");
+    printf("Carta 1: %d\n", populacao);
+    printf("Carta 2: %d\n", populacao2);
     if (populacao > populacao2)
     {
+       
         printf("carta 1 venceu!\n");
-        printf("População da carta 1: %d\n", &populacao);
     }
     else
     {
         printf("Carta 2 venceu!\n");
-        printf("População da carta 2 : %d\n", &populacao2);
+       
     }
+    printf("Comparação de cartas (atributo: Pontos turísticos)\n");
+    printf("Carta 1: %d\n", numero_pontos_turisticos);
+    printf("Carta 2: %d\n", numero_pontos_turisticos2);
     if (numero_pontos_turisticos > numero_pontos_turisticos2)
     {
         printf("Carta 1 venceu!\n");
-        printf("Numero de pontos turisticos da carta 1 : %d\n", &numero_pontos_turisticos);
     }
     else
     {
         printf("Carta 2 venceu!\n");
-        printf("Numero de pontos turisticos da carta 2 : %d\n", &numero_pontos_turisticos2);
     }
+    printf("Comparação de cartas (atributo: Area km)\n");
+    printf("Carta 1: %s : %.2f\n",nome_estado, area_km);
+    printf("Carta 2: %s : %.2f\n",nome_estado2, area_km2);
     if (area_km > area_km2)
     {
         printf("Carta 1 venceu!\n");
-        printf("Area da carta 1 : %.2f\n", &area_km);
     }
     else
     {
         printf("Carta 2 venceu!\n");
-        printf("Area da carta 2 : %.2f\n", &area_km);
     }
+    printf("Comparação de cartas (atributo: Pib)\n");
+    printf("Carta 1: %s : %.2f\n",nome_estado, pib);
+    printf("Carta 2: %s : %.2f\n",nome_estado2, pib2);
     if (pib > pib2)
     {
         printf("Carta 1 venceu!\n");
-        printf("Pib da carta 1 : %.2f\n", &pib);
     }
     else
     {
         printf("Carta 2 venceu!\n");
-        printf("Pib da carta 2 : %.2f\n", &pib);
+        
     }
+    printf("Comparação de cartas (atributo: Pib per capita)\n");
+    printf("Carta 1: %s : %.2f\n",nome_estado, pib_per_capita);
+    printf("Carta 2: %s : %.2f\n",nome_estado2, pib_per_capita2);
     if (pib_per_capita > pib_per_capita2)
     {
         printf("Carta 1 venceu!\n");
-        printf("Pib per capita da carta 1 : %.2f\n", &pib_per_capita);
     }
     else
     {
         printf("Carta 2 venceu!\n");
-        printf("Pib per capita da carta 2 : %.2f", &pib_per_capita2);
+        
     }
+    printf("Comparação de cartas (atributo: Densidade populacional)\n");
+    printf("Carta 1: %s : %.2f\n",nome_estado, densidade_populacional);
+    printf("Carta 2: %s : %.2f\n",nome_estado2, densidade_populacional2);
     if (densidade_populacional < densidade_populacional2)
     {
         printf("Carta 1 venceu!\n");
-        printf("Densidade carta 1 : %.2f\n", &densidade_populacional);
+       
     }
     else
     {
         printf("Carta 2 venceu!\n");
-        printf("Densidade carta 2 : %.2f\n", &densidade_populacional2);
+        
     }
+    printf("Comparação de cartas (atributo: Super poder)\n");
+    printf("Carta 1: %s : %.2f\n",nome_estado, super_poder);
+    printf("Carta 2: %s : %.2f\n",nome_estado2, super_poder2);
     if (super_poder > super_poder2)
     {
         printf("Carta 1 venceu!\n");
-        printf("Super poder carta 1 : %.2f\n", &super_poder);
     }
     else
     {
         printf("Carta 2 venceu!\n");
-        printf("Super poder carta 2 : %.2f\n", &super_poder2);
     }
-
+    
     return 0;
 }
